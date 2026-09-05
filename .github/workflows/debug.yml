@@ -1,0 +1,25 @@
+name: Debug Token Identity
+on:
+  workflow_dispatch:
+
+jobs:
+  whoami:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          registry-url: https://registry.npmjs.org/
+      - name: whoami
+        run: npm whoami
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+      - name: probe token against registry directly
+        run: |
+          echo "--- /-/whoami via curl ---"
+          curl -s -o /tmp/out.json -w "HTTP %{http_code}\n" \
+            -H "Authorization: Bearer $NODE_AUTH_TOKEN" \
+            https://registry.npmjs.org/-/whoami
+          cat /tmp/out.json; echo
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
