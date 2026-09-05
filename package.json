@@ -62,6 +62,7 @@
     "src",
     "README.md",
     "README.zh.md",
+    "README.i18n.yaml",
     "LICENSE"
   ],
   "scripts": {
