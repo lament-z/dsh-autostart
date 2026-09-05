@@ -4,7 +4,7 @@
  * the Host reads them back through installSettingsSection. Adds a boot-autostart
  * section (enable/cancel + profile) on top of the dsh-restart restart controls.
  */
-import type { Context } from './context-types.ts';
+import type { Context } from './context-types';
 import type { PropsLocale } from '@deepseek-ai/dsh-client-ui-slots';
 export declare const name = "dsh-autostart-client";
 export declare const inject: string[];

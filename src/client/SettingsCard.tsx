@@ -1,8 +1,8 @@
 import { useEffect, useRef, useState } from 'react'
-import type { SettingsCardProps } from './index.ts'
-import { restartAndWait } from './restart-monitor.ts'
-import { fetchAutostartStatus, type AutostartStatus } from './autostart.ts'
-import { styles as css } from './styles.ts'
+import type { SettingsCardProps } from './index'
+import { restartAndWait } from './restart-monitor'
+import { fetchAutostartStatus, type AutostartStatus } from './autostart'
+import { styles as css } from './styles'
 
 const RESTART_SUCCEEDED_KEY = 'dsh-autostart:completed'
 

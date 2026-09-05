@@ -1,3 +1,3 @@
-import type { SettingsCardProps } from './index.ts';
+import type { SettingsCardProps } from './index';
 /** The dsh-autostart configuration card, styled with the host plugin-card tokens. */
 export declare function SettingsCard(props: SettingsCardProps): import("react").JSX.Element | null;
