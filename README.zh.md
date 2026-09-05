@@ -24,7 +24,7 @@
 
 ```sh
 # 从 npm 安装
-dsh plugin --profile web add npm:dsh-autostart
+dsh plugin --profile web add npm:@lament-z/dsh-autostart
 
 # 从 GitHub 安装（lib 预构建产物随仓库发布）
 dsh plugin --profile web add github:lament-z/dsh-autostart
@@ -78,7 +78,7 @@ git tag v$(node -p "require('./package.json').version")
 git push origin --tags
 ```
 
-其他 deepseek-harness 实例可通过 `dsh plugin --profile web add npm:dsh-autostart` 或 `github:lament-z/dsh-autostart` 拉取本插件。
+其他 deepseek-harness 实例可通过 `dsh plugin --profile web add npm:@lament-z/dsh-autostart` 或 `github:lament-z/dsh-autostart` 拉取本插件。
 
 ## 许可
 
