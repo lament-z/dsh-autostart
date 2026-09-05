@@ -1,5 +1,5 @@
 {
-  "name": "@lament-z/dsh-autostart",
+  "name": "@lament_z/dsh-autostart",
   "version": "0.1.0",
   "description": "DSH 自启动 / 重启插件：在 dsh-restart 基础上新增开机自启动（跨平台：macOS launchd / Windows 注册表 / Linux systemd），支持在设置卡片中「选择」启用与「取消」禁用，并保留可配置重启方式、自动继续提示词与看门狗。",
   "license": "MIT",
